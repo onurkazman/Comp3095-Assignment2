@@ -1,18 +1,15 @@
 package comp3095.assignment2.thelions.demo.controllers;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.stereotype.Controller;
 
 
-@RestController
+@Controller
 public class LoginController {
 
-    @RequestMapping("/index")
+    @RequestMapping("/login")
     public String index() {
-        return "index"; }
+        return "login"; }
 
-    @RequestMapping("/register")
-    public String register() {
-        return "@{/register.html}"; }
 
 }
 

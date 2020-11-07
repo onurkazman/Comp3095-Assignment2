@@ -6,7 +6,7 @@
 </head>
 <body>
 <h1>LOGIN</h1>
-<form name='f' action="login" method='POST'>
+<form name='login' action="login" method='POST'>
     <table>
         <tr>
             <td>Username:</td>
@@ -21,13 +21,15 @@
                 <label for="notRobot"> I am not a Robot</label></td>
         </tr>
         <tr>
-            <td><input name="submit" type="submit" value="Submit" ></td>
-            <td><input name="register" type="submit" value="Register"></td>
+            <td><button onclick="location.href='/dashboard'" type="button">
+                Login</button></td>
+
+            <td><button onclick="location.href='/register'" type="button">
+                Register</button></td>
         </tr>
         <tr>
-            <td><a th:href="@{/register}">Forgot your password?</a></td>
+            <td><a th:href="@{/}">Forgot your password?</a></td>
         </tr>
-
     </table>
 </form>
 </body>

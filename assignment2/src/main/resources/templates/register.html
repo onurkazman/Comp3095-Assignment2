@@ -5,6 +5,40 @@
     <title>Register</title>
 </head>
 <body>
-    <h1>asdfasgdsa</h1>
+<h1>REGISTRATION PAGE</h1>
+<form name='f' action="login" method='POST'>
+    <table>
+        <tr>
+            <td>Firstname*:</td>
+            <td><input type='text' name='firstname'></td>
+            <td>Lastname*:</td>
+            <td><input type='text' name='lastname'></td>
+        </tr>
+        <tr>
+            <td>Address*:</td>
+            <td><input type='text' name='address'></td>
+        </tr>
+        <tr>
+            <td>Email*:</td>
+            <td><input type='email' name='email'></td>
+        </tr>
+        <tr>
+            <td>Password*:</td>
+            <td><input type='password' name='password'></td>
+        </tr>
+        <tr>
+            <td>Confirm Password*:</td>
+            <td><input type='password' name='confirmpassword'></td>
+        </tr>
+        <tr>
+            <td> <input type="checkbox" id="termsofservice" name="termsofservice" value="confirm">
+                <label for="termsofservice"> I agree to the <a th:href="@{/}">terms of service</a></label></td>
+        </tr>
+        <tr>
+            <td><input name="register" type="submit" value="Register" ></td>
+            <td><input name="cancel" type="submit" value="Cancel"></td>
+        </tr>
+    </table>
+</form>
 </body>
 </html>
